@@ -1,0 +1,14 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: url(../Pagina/azul.jpg);
+    background-size: cover;
+}
+.cajita{
+    height: 480px;
+    width: 600px;
+    position: absolute;
+    top: 40%;
+    left: 60%;
+    transform: translate(-50%,-50%);
+    border-radius: 12px;
+}

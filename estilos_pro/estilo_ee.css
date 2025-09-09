@@ -1,0 +1,63 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: lavender;
+}
+h1{
+    color: #000;
+}
+
+.caja-p{
+    background-color: darkgray;
+    margin-left: 10px;
+    position: absolute;
+    border: 7px inset aqua;
+    border-radius: 12px;
+
+}
+
+.caja-c{
+    background-color: darkgray;
+    margin-top: 100px;
+    position: absolute;
+    left: 47%;
+    top: 46%;
+    border: 7px inset aqua;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+}
+img{
+    margin: 8px 12px;
+}
+
+.con{
+    position: absolute;
+    left: 58%;
+    top: 330px;
+}
+
+input [type="radio"]{
+    position: relative;
+    bottom: 105px;
+    left: 105px;
+    width: 100px;
+}
+
+.votar{
+    position: absolute;
+    top: 500px;
+}
+.personero{
+    position: absolute;
+    top: 300px;
+}
+.radio-p{
+    position: absolute;
+    top: 1px;
+    display: none;
+}
+.radio-c{
+    position: absolute;
+    bottom: 1px;
+    display: none;
+}

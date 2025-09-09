@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Iniciar</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="estilos_pro/estilo_i.css">
+    </head>
+    <body>
+        <div class="caja">
+            <div class="cajita-in">
+                <h1>Iniciar sesion</h1>
+                
+                <form>
+                    <div class="caja-de-texto">
+                        <input type="text" id="usuario" name="doc" placeholder="Usuario" required>
+                    </div>
+                    <div class="caja-de-texto">
+                        <input type="password" id="contrasena" name="contraseña" placeholder="Contraseña" required>
+                    </div>   
+
+                    <input class="boton" type="button" value="Ingresar" onclick="validarUsuario()">
+
+                </form>    
+            </div>
+        </div>
+        <script>
+            function validarUsuario() {
+                var usuario = document.getElementById('usuario').value;
+                var contrasena = document.getElementById('contrasena').value;
+                if (usuario === 'admin' && contrasena === '12345') {
+                    window.location.href = 'Pagina/index.html';
+                } else {
+                    alert('Usuario o contraseña incorrectos');
+                }
+            }
+        </script>
+    </body>
+</html>

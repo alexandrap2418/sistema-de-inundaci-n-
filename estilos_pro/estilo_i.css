@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #0A2A43, #1C3C5A);
+  background-image: url("../Pagina/fondo_inundaciones_login.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+
+.caja{
+    background: 
+        linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+        ),
+        url(../Pagina/fondo_inundaciones_login.jpg) no-repeat;
+    height: 460px;
+    width: 500px;
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 12px;
+}
+
+.cajita-in{
+    width: 350px;
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+ 
+}
+
+.cajita-in h1{
+    float: left;
+    font-size: 38px;
+    border-bottom: 6px solid lightseagreen;
+    margin-bottom: 30px;
+    padding: 12px 0;
+    cursor: context-menu;
+
+}
+.caja-de-texto{
+    width: 100%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 10px 0;
+    border-bottom: 2px solid aquamarine;
+}
+.caja-de-texto input{
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+    font-size: 14px;
+    width: 15em;
+    float: left;
+    margin: 10px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+
+.boton{
+    width: 100%;
+    background: none;
+    color: white;
+    border: 2px solid aquamarine;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 18px;
+    margin: 12px 0;
+}
