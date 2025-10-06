@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reseñas - Sistema de Detección de Inundaciones</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v6.4.0/css/all.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/resena.css">
+</head>
+<body>
+    <!-- Header mejorado -->
+    <div class="header-container">
+        <h1 id="h11">FLOOD DETECTION SYSTEM</h1>
+        <div class="water-drop">
+            <svg width="70" height="70" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="waterGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#00BFFF;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#0080FF;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <path d="M50 10 C65 35, 85 55, 50 90 C15 55, 35 35, 50 10 Z" fill="url(#waterGrad)" stroke="#ffffff" stroke-width="2"/>
+                <path d="M20 75 Q35 65, 50 75 T80 75" fill="none" stroke="#ffffff" stroke-width="3"/>
+            </svg>
+        </div>
+    </div>
+
+    <!-- Navegación -->
+    <nav class="main-nav">
+        <a href="./index.html" data-page="index">
+            <i class="fas fa-home"></i>
+            <span>Inicio</span>
+        </a>    
+        <a href="./Mision.html" data-page="mision">
+            <i class="fas fa-bullseye"></i>
+            <span>Misión y Visión</span>
+        </a>
+        <a href="./resenas.html" data-page="resenas">
+            <i class="fas fa-star"></i>
+            <span>Reseñas</span>
+        </a>
+        <a href="./Contacto.html" data-page="contacto">
+            <i class="fas fa-envelope"></i>
+            <span>Contacto</span>
+        </a>
+    </nav>
+    
+    <!-- Botón para abrir el formulario de reseña -->
+    <div class="add-review-container">
+        <button id="open-review-form" class="add-review-btn">
+            <i class="fas fa-plus-circle"></i>
+            Escribir Reseña
+        </button>
+    </div>
+
+    <!-- Contenedor principal de reseñas -->
+    <div class="reviews-container">
+        <div class="reviews-header">
+            <h2><i class="fas fa-comments"></i> Reseñas de Usuarios</h2>
+            <p class="subtitle">Lo que dicen nuestros usuarios sobre el sistema</p>
+        </div>
+
+        <div class="reviews-grid">
+            <!-- Las reseñas existentes se mantienen aquí -->
+            <!-- Reseña 1 -->
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="user-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="user-info">
+                        <h4>Usuario Anónimo</h4>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-content">
+                    <p>"Muy buen sitio, me ha gustado mucho. La interfaz es clara y la información es muy útil para mi comunidad."</p>
+                </div>
+                <div class="review-footer">
+                    <span class="review-date"><i class="fas fa-calendar-alt"></i> Hace 2 días</span>
+                </div>
+            </div>
+
+            <!-- Reseña 2 -->
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="user-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="user-info">
+                        <h4>Usuario Verificado</h4>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-content">
+                    <p>"¡Es muy intuitivo! El sistema me permite monitorear las condiciones de mi zona de manera eficiente."</p>
+                </div>
+                <div class="review-footer">
+                    <span class="review-date"><i class="fas fa-calendar-alt"></i> Hace 1 semana</span>
+                </div>
+            </div>
+
+            <!-- Reseña 3 -->
+            <div class="review-card featured">
+                <div class="review-header">
+                    <div class="user-avatar">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <div class="user-info">
+                        <h4>Residente Local</h4>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-content">
+                    <p>"Me pareció muy chévere, ya no me volveré a preocupar por las inundaciones en mi zona. El sistema de alertas es excelente."</p>
+                </div>
+                <div class="review-footer">
+                    <span class="review-date"><i class="fas fa-calendar-alt"></i> Hace 3 días</span>
+                    <span class="featured-badge"><i class="fas fa-crown"></i> Destacada</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Estadísticas -->
+        <div class="stats-container">
+            <div class="stat-item">
+                <div class="stat-number">4.9</div>
+                <div class="stat-label">Calificación Promedio</div>
+                <div class="stat-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">256</div>
+                <div class="stat-label">Reseñas Totales</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">98%</div>
+                <div class="stat-label">Recomendarían</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para enviar reseñas -->
+    <div id="review-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3><i class="fas fa-star"></i> Escribe tu Reseña</h3>
+                <span class="close">&times;</span>
+            </div>
+            <form id="review-form">
+                <div class="form-group">
+                    <label for="user-name">Nombre (opcional)</label>
+                    <input type="text" id="user-name" placeholder="¿Cómo te llamas?">
+                </div>
+                
+                <div class="form-group">
+                    <label>Calificación</label>
+                    <div class="rating-stars">
+                        <i class="far fa-star" data-rating="1"></i>
+                        <i class="far fa-star" data-rating="2"></i>
+                        <i class="far fa-star" data-rating="3"></i>
+                        <i class="far fa-star" data-rating="4"></i>
+                        <i class="far fa-star" data-rating="5"></i>
+                    </div>
+                    <input type="hidden" id="rating-value" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="review-text">Tu Reseña</label>
+                    <textarea id="review-text" placeholder="Comparte tu experiencia con nuestro sistema..." required></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Enviar Reseña</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Mensaje de confirmación -->
+    <div id="success-message" class="success-message">
+        <i class="fas fa-check-circle"></i>
+        <p>¡Gracias! Tu reseña ha sido enviada.</p>
+    </div>
+
+    <!-- Redes sociales mejoradas -->
+    <div class="social-sidebar">
+        <div class="social-title">Síguenos</div>
+        <ul>
+            <li>
+                <a href="https://www.facebook.com" target="_blank" class="social-link facebook">
+                    <i class="fab fa-facebook-f"></i>
+                    <span>Facebook</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.twitter.com" target="_blank" class="social-link twitter">
+                    <i class="fab fa-twitter"></i>
+                    <span>Twitter</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com" target="_blank" class="social-link instagram">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+            </li>
+            <li>
+                <a href="mailto:Alm4n4k3@gmail.com" target="_blank" class="social-link email">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.whatsapp.com" target="_blank" class="social-link whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Elementos del DOM
+            const openReviewBtn = document.getElementById('open-review-form');
+            const reviewModal = document.getElementById('review-modal');
+            const closeModal = document.querySelector('.close');
+            const reviewForm = document.getElementById('review-form');
+            const ratingStars = document.querySelectorAll('.rating-stars i');
+            const ratingValue = document.getElementById('rating-value');
+            const successMessage = document.getElementById('success-message');
+            
+            // Abrir modal
+            openReviewBtn.addEventListener('click', function() {
+                reviewModal.style.display = 'flex';
+            });
+            
+            // Cerrar modal
+            closeModal.addEventListener('click', function() {
+                reviewModal.style.display = 'none';
+                resetForm();
+            });
+            
+            // Cerrar modal al hacer clic fuera
+            window.addEventListener('click', function(event) {
+                if (event.target === reviewModal) {
+                    reviewModal.style.display = 'none';
+                    resetForm();
+                }
+            });
+            
+            // Sistema de calificación con estrellas
+            ratingStars.forEach(star => {
+                star.addEventListener('click', function() {
+                    const rating = this.getAttribute('data-rating');
+                    ratingValue.value = rating;
+                    
+                    // Actualizar visualización de estrellas
+                    ratingStars.forEach(s => {
+                        if (s.getAttribute('data-rating') <= rating) {
+                            s.classList.remove('far');
+                            s.classList.add('fas', 'active');
+                        } else {
+                            s.classList.remove('fas', 'active');
+                            s.classList.add('far');
+                        }
+                    });
+                });
+                
+                // Efecto hover en estrellas
+                star.addEventListener('mouseover', function() {
+                    const rating = this.getAttribute('data-rating');
+                    ratingStars.forEach(s => {
+                        if (s.getAttribute('data-rating') <= rating) {
+                            s.classList.add('hover');
+                        } else {
+                            s.classList.remove('hover');
+                        }
+                    });
+                });
+                
+                star.addEventListener('mouseout', function() {
+                    ratingStars.forEach(s => {
+                        s.classList.remove('hover');
+                    });
+                });
+            });
+            
+            // Enviar formulario
+            reviewForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Validación básica
+                if (!ratingValue.value) {
+                    alert('Por favor, selecciona una calificación');
+                    return;
+                }
+                
+                // Obtener datos del formulario
+                const userName = document.getElementById('user-name').value || 'Usuario Anónimo';
+                const reviewText = document.getElementById('review-text').value;
+                const rating = ratingValue.value;
+                
+                // Aquí normalmente enviarías los datos a un servidor
+                // Por ahora, simularemos el envío exitoso
+                
+                // Crear nueva reseña (solo para demostración)
+                createNewReview(userName, reviewText, rating);
+                
+                // Mostrar mensaje de éxito
+                showSuccessMessage();
+                
+                // Cerrar modal y resetear formulario
+                reviewModal.style.display = 'none';
+                resetForm();
+            });
+            
+            // Función para crear una nueva reseña (solo para demostración)
+            function createNewReview(name, text, rating) {
+                const reviewsGrid = document.querySelector('.reviews-grid');
+                
+                // Crear elemento de reseña
+                const reviewCard = document.createElement('div');
+                reviewCard.className = 'review-card';
+                reviewCard.innerHTML = `
+                    <div class="review-header">
+                        <div class="user-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="user-info">
+                            <h4>${name}</h4>
+                            <div class="stars">
+                                ${getStarsHTML(rating)}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <p>"${text}"</p>
+                    </div>
+                    <div class="review-footer">
+                        <span class="review-date"><i class="fas fa-calendar-alt"></i> Justo ahora</span>
+                    </div>
+                `;
+                
+                // Insertar al principio del grid
+                reviewsGrid.insertBefore(reviewCard, reviewsGrid.firstChild);
+                
+                // Actualizar estadísticas (simulado)
+                updateStats();
+            }
+            
+            // Función para generar HTML de estrellas
+            function getStarsHTML(rating) {
+                let starsHTML = '';
+                for (let i = 1; i <= 5; i++) {
+                    if (i <= rating) {
+                        starsHTML += '<i class="fas fa-star"></i>';
+                    } else {
+                        starsHTML += '<i class="far fa-star"></i>';
+                    }
+                }
+                return starsHTML;
+            }
+            
+            // Función para mostrar mensaje de éxito
+            function showSuccessMessage() {
+                successMessage.classList.add('show');
+                
+                // Ocultar después de 3 segundos
+                setTimeout(() => {
+                    successMessage.classList.remove('show');
+                }, 3000);
+            }
+            
+            // Función para resetear formulario
+            function resetForm() {
+                reviewForm.reset();
+                ratingStars.forEach(star => {
+                    star.classList.remove('fas', 'active');
+                    star.classList.add('far');
+                });
+                ratingValue.value = '';
+            }
+            
+            // Función para actualizar estadísticas (simulada)
+            function updateStats() {
+                // En una implementación real, esto se haría con datos del servidor
+                const statNumber = document.querySelector('.stat-number');
+                const currentCount = parseInt(statNumber.textContent);
+                statNumber.textContent = currentCount + 1;
+            }
+        });
+    </script>
+</body>
+</html>
