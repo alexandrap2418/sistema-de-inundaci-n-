@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sistema de Deteccion de Inundaciones</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="/sistema-de-inundaci-n-/css/mision.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header-container">
+        <h1 id="h11">FLOOD DETECTION SYSTEM</h1>
+        <div class="water-drop">
+            <svg width="70" height="70" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="waterGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#00BFFF;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#0080FF;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <path d="M50 10 C65 35, 85 55, 50 90 C15 55, 35 35, 50 10 Z" fill="url(#waterGrad)" stroke="#ffffff" stroke-width="2"/>
+                <path d="M20 75 Q35 65, 50 75 T80 75" fill="none" stroke="#ffffff" stroke-width="3"/>
+            </svg>
+        </div>
+    </div>
+
+    <!-- Navegación -->
+    <nav class="main-nav">
+        <a href="index.html">
+            <i class="fas fa-home"></i>
+            <span>Inicio</span>
+        </a>
+        <a href="Mision.html" class="active">
+            <i class="fas fa-bullseye"></i>
+            <span>Misión y Visión</span>
+        </a>
+        <a href="reseñas.html">
+            <i class="fas fa-star"></i>
+            <span>Reseñas</span>
+        </a>
+        <a href="Contacto.html">
+            <i class="fas fa-envelope"></i>
+            <span>Contacto</span>
+        </a>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div class="main-container">
+        <!-- Sección de Misión -->
+        <div class="section-container mission-section">
+            <div class="section-header">
+                <div class="icon-container mission-icon">
+                    <i class="fas fa-bullseye"></i>
+                </div>
+                <h2>Nuestra Misión</h2>
+                <p class="section-subtitle">La razón de ser de nuestro sistema</p>
+            </div>
+            
+            <div class="content-card">
+                <p class="main-description">
+                    La misión principal de nuestro sistema de detección de inundaciones es <strong>proteger a las personas, la infraestructura y el medio ambiente</strong> de los efectos devastadores de las inundaciones mediante tecnología avanzada y respuesta oportuna.
+                </p>
+                
+                <div class="objectives-grid">
+                    <div class="objective-card">
+                        <div class="objective-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4>Mitigación de Riesgos</h4>
+                        <p>Implementar medidas estructurales y no estructurales como sistemas de alerta temprana, zonificación inteligente y educación pública para reducir significativamente el riesgo de inundación.</p>
+                    </div>
+                    
+                    <div class="objective-card">
+                        <div class="objective-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h4>Preparación y Respuesta</h4>
+                        <p>Desarrollar planes de emergencia eficientes, sistemas de alerta temprana precisos y equipos de respuesta rápida para actuar de manera inmediata durante eventos de inundación.</p>
+                    </div>
+                    
+                    <div class="objective-card">
+                        <div class="objective-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4>Protección Comunitaria</h4>
+                        <p>Salvaguardar vidas humanas y bienes materiales mediante un monitoreo continuo y alertas oportunas que permitan la evacuación y preparación preventiva.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de Visión -->
+        <div class="section-container vision-section">
+            <div class="section-header">
+                <div class="icon-container vision-icon">
+                    <i class="fas fa-eye"></i>
+                </div>
+                <h2>Nuestra Visión</h2>
+                <p class="section-subtitle">Hacia dónde nos dirigimos en el futuro</p>
+            </div>
+            
+            <div class="content-card">
+                <p class="main-description">
+                    Aspiramos a crear <strong>comunidades resilientes y sostenibles</strong> que coexistan de manera segura con el agua, minimizando los daños y promoviendo la armonía con los ecosistemas fluviales.
+                </p>
+                
+                <div class="vision-pillars">
+                    <div class="pillar-card">
+                        <div class="pillar-icon">
+                            <i class="fas fa-mountain"></i>
+                        </div>
+                        <h4>Resiliencia</h4>
+                        <p>Que las comunidades puedan <strong>resistir, absorber, recuperarse y adaptarse</strong> efectivamente a las inundaciones futuras, desarrollando capacidades permanentes de respuesta.</p>
+                    </div>
+                    
+                    <div class="pillar-card">
+                        <div class="pillar-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h4>Sostenibilidad</h4>
+                        <p>Integrar la gestión de inundaciones con la <strong>protección ambiental</strong>, utilizando soluciones basadas en la naturaleza y tecnologías eco-amigables siempre que sea posible.</p>
+                    </div>
+                    
+                    <div class="pillar-card">
+                        <div class="pillar-icon">
+                            <i class="fas fa-globe-americas"></i>
+                        </div>
+                        <h4>Innovación Global</h4>
+                        <p>Ser referentes mundiales en <strong>sistemas de detección inteligente</strong>, expandiendo nuestro impacto a comunidades vulnerables en todo el mundo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de Valores -->
+        <div class="values-section">
+            <div class="values-header">
+                <h3><i class="fas fa-heart"></i> Nuestros Valores</h3>
+            </div>
+            
+            <div class="values-grid">
+                <div class="value-item">
+                    <i class="fas fa-handshake"></i>
+                    <span>Compromiso</span>
+                </div>
+                <div class="value-item">
+                    <i class="fas fa-lightbulb"></i>
+                    <span>Innovación</span>
+                </div>
+                <div class="value-item">
+                    <i class="fas fa-balance-scale"></i>
+                    <span>Transparencia</span>
+                </div>
+                <div class="value-item">
+                    <i class="fas fa-award"></i>
+                    <span>Excelencia</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer con créditos -->
+    <div class="footer-credits">
+        <p><i class="fas fa-code"></i> Desarrollado con 💙 por <strong>Alexandra Pulgarín</strong> y <strong>Sara Usuga</strong></p>
+    </div>
+
+    <!-- Redes sociales -->
+    <div class="social-sidebar">
+        <div class="social-title">Síguenos</div>
+        <ul>
+            <li>
+                <a href="https://www.facebook.com" target="_blank" class="social-link facebook">
+                    <i class="fab fa-facebook-f"></i>
+                    <span>Facebook</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.twitter.com" target="_blank" class="social-link twitter">
+                    <i class="fab fa-twitter"></i>
+                    <span>Twitter</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com" target="_blank" class="social-link instagram">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+            </li>
+            <li>
+                <a href="mailto:Alm4n4k3@gmail.com" target="_blank" class="social-link email">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.whatsapp.com" target="_blank" class="social-link whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
